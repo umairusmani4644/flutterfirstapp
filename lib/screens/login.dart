@@ -50,7 +50,21 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {
                     print("hello");
                   },
-                )
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                Text("OR"),
+                SizedBox(
+                  height: 20.0,
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print("Register");
+                  },
+                  child: Text("Create an Account"),
+                  style: TextButton.styleFrom(),
+                ),
               ],
             ),
           ),
