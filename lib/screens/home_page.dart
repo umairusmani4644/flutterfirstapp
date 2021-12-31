@@ -6,18 +6,16 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Card Application"),
-        ),
-        body: Center(
-          child: Container(
-            child: Text("My first Application"),
-          ),
-        ),
-        drawer: Drawer(),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Card Application"),
       ),
+      body: Center(
+        child: Container(
+          child: Text("My first Application"),
+        ),
+      ),
+      drawer: Drawer(),
     );
   }
 }
