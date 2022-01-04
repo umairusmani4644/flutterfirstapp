@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_card_app/screens/home_page.dart';
 import 'package:my_card_app/screens/login.dart';
+import 'package:my_card_app/screens/register.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => HomePage(),
         '/': (context) => LoginPage(),
+        '/register': (context) => RegisterPage(),
       },
     );
   }
