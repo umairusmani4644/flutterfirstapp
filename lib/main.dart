@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_card_app/screens/home_page.dart';
 import 'package:my_card_app/screens/login.dart';
 import 'package:my_card_app/screens/register.dart';
+import 'package:my_card_app/utils/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,9 +26,9 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       routes: {
-        '/home': (context) => HomePage(),
-        '/': (context) => LoginPage(),
-        '/register': (context) => RegisterPage(),
+        MyRoutes.HomeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
+        MyRoutes.RegisterRoute: (context) => RegisterPage(),
       },
     );
   }

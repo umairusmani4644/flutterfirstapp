@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_card_app/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -48,7 +49,7 @@ class LoginPage extends StatelessWidget {
                   child: Text("Login"),
                   style: TextButton.styleFrom(),
                   onPressed: () {
-                    print("hello");
+                    Navigator.pushNamed(context, MyRoutes.HomeRoute);
                   },
                 ),
                 SizedBox(
@@ -60,7 +61,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print("Register");
+                    Navigator.pushNamed(context, MyRoutes.RegisterRoute);
                   },
                   child: Text("Create an Account"),
                   style: TextButton.styleFrom(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_card_app/utils/routes.dart';
 //import 'package:flutter/src/material/date_picker.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -68,7 +69,7 @@ class RegisterPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print('Registered');
+                    Navigator.pushNamed(context, MyRoutes.loginRoute);
                   },
                   child: Text(
                     "Register",
